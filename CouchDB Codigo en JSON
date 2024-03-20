@@ -1,0 +1,427 @@
+{
+    "total_rows": 9,
+    "offset": 0,
+    "rows": [
+        {
+            "id": "25f6f4996d0f33c06334c8d44a0052ae",
+            "key": "25f6f4996d0f33c06334c8d44a0052ae",
+            "value": {
+                "rev": "2-26ce60176f9b65027c2ac0a7303e16bb"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a0052ae",
+                "_rev": "2-26ce60176f9b65027c2ac0a7303e16bb",
+                "tutores": [
+                    {
+                        "IdTutor": "331",
+                        "nombreT": "Jeferson",
+                        "carrera": "docente de fisica",
+                        "semestre": "5",
+                        "calificacion_promedio": "4"
+                    },
+                    {
+                        "IdTutor": "332",
+                        "nombreT": "Jefrey",
+                        "carrera": "docente de fisica",
+                        "semestre": "5",
+                        "calificacion_promedio": "4.5"
+                    },
+                    {
+                        "IdTutor": "333",
+                        "nombreT": "Carlos",
+                        "carrera": "matematico",
+                        "semestre": "4",
+                        "calificacion_promedio": "4.4"
+                    },
+                    {
+                        "IdTutor": "334",
+                        "nombreT": "Paula",
+                        "carrera": "Artista",
+                        "semestre": "3",
+                        "calificacion_promedio": "4.8"
+                    },
+                    {
+                        "IdTutor": "335",
+                        "nombreT": "Romeo",
+                        "carrera": "Artista",
+                        "semestre": "5",
+                        "calificacion_promedio": "4.1"
+                    },
+                    {
+                        "IdTutor": "336",
+                        "nombreT": "Tina",
+                        "carrera": "ing informatica",
+                        "semestre": "5",
+                        "calificacion_promedio": "4.5"
+                    },
+                    {
+                        "IdTutor": "337",
+                        "nombreT": "Orlando",
+                        "carrera": "ing informatica",
+                        "semestre": "5",
+                        "calificacion_promedio": "4.6"
+                    },
+                    {
+                        "IdTutor": "338",
+                        "nombreT": "German",
+                        "carrera": "historiador",
+                        "semestre": "5",
+                        "calificacion_promedio": "4.8"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "25f6f4996d0f33c06334c8d44a0071de",
+            "key": "25f6f4996d0f33c06334c8d44a0071de",
+            "value": {
+                "rev": "3-20a4426b2c470a745d4f0393444c7a58"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a0071de",
+                "_rev": "3-20a4426b2c470a745d4f0393444c7a58",
+                "cursos": [
+                    {
+                        "idCurso": "221",
+                        "nombreCurso": "Pintura en oleo",
+                        "categoria": "artes",
+                        "modalidad": "presencial",
+                        "gratuito": true,
+                        "precio": "0",
+                        "duracion": "16h",
+                        "certtificado": true,
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "222",
+                        "nombreCurso": "Fisica",
+                        "categoria": "ciencias basicas",
+                        "modalidad": "presencial",
+                        "gratuito": false,
+                        "precio": "600000",
+                        "duracion": "54h",
+                        "certtificado": true,
+                        "calificacion": "4.3"
+                    },
+                    {
+                        "idCurso": "223",
+                        "nombreCurso": "Python",
+                        "categoria": "tecnologia",
+                        "modalidad": "presencial",
+                        "gratuito": false,
+                        "precio": "500000",
+                        "duracion": "48h",
+                        "certtificado": true,
+                        "calificacion": "4.7"
+                    },
+                    {
+                        "idCurso": "224",
+                        "nombreCurso": "Base de datos",
+                        "categoria": "tecnologia",
+                        "modalidad": "presencial",
+                        "gratuito": false,
+                        "precio": "500000",
+                        "duracion": "48h",
+                        "certtificado": true,
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "225",
+                        "nombreCurso": "Matematica discreta",
+                        "categoria": "ciencias basicas",
+                        "modalidad": "presencial",
+                        "gratuito": false,
+                        "precio": "500000",
+                        "duracion": "54h",
+                        "certtificado": true,
+                        "calificacion": "4.3"
+                    },
+                    {
+                        "idCurso": "226",
+                        "nombreCurso": "Comics",
+                        "categoria": "artes",
+                        "modalidad": "presencial",
+                        "gratuito": true,
+                        "precio": "0",
+                        "duracion": "20h",
+                        "certtificado": false,
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "227",
+                        "nombreCurso": "Fisica 2",
+                        "categoria": "ciencias basicas",
+                        "modalidad": "presencial",
+                        "gratuito": false,
+                        "precio": "600000",
+                        "duracion": "54h",
+                        "certtificado": true,
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "228",
+                        "nombreCurso": "Historia",
+                        "categoria": "humanidades",
+                        "modalidad": "remoto",
+                        "gratuito": true,
+                        "precio": "0",
+                        "duracion": "48h",
+                        "certtificado": true,
+                        "calificacion": "4.1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "25f6f4996d0f33c06334c8d44a008d1f",
+            "key": "25f6f4996d0f33c06334c8d44a008d1f",
+            "value": {
+                "rev": "3-eb165ba9776aaa6d0c6625e397f6d23b"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a008d1f",
+                "_rev": "3-eb165ba9776aaa6d0c6625e397f6d23b",
+                "cursoTutores": [
+                    {
+                        "idCurso": "221",
+                        "idTutor": "334",
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "222",
+                        "idTutor": "331",
+                        "calificacion": "4.4"
+                    },
+                    {
+                        "idCurso": "223",
+                        "idTutor": "336",
+                        "calificacion": "4.6"
+                    },
+                    {
+                        "idCurso": "224",
+                        "idTutor": "337",
+                        "calificacion": "4.4"
+                    },
+                    {
+                        "idCurso": "225",
+                        "idTutor": "333",
+                        "calificacion": "4.2"
+                    },
+                    {
+                        "idCurso": "226",
+                        "idTutor": "335",
+                        "calificacion": "4.4"
+                    },
+                    {
+                        "idCurso": "227",
+                        "idTutor": "332",
+                        "calificacion": "4.5"
+                    },
+                    {
+                        "idCurso": "228",
+                        "idTutor": "338",
+                        "calificacion": "4.3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "25f6f4996d0f33c06334c8d44a00e900",
+            "key": "25f6f4996d0f33c06334c8d44a00e900",
+            "value": {
+                "rev": "1-6b8548dc53df4219b27ea0187159863c"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a00e900",
+                "_rev": "1-6b8548dc53df4219b27ea0187159863c",
+                "aprendizCurso": [
+                    {
+                        "idCurso": "221",
+                        "id": [
+                            "333",
+                            "444",
+                            "100"
+                        ],
+                        "cantidad": "3"
+                    },
+                    {
+                        "idCurso": "222",
+                        "id": [
+                            "111",
+                            "555",
+                            "666"
+                        ],
+                        "cantidad": "3"
+                    },
+                    {
+                        "idCurso": "223",
+                        "id": [
+                            "111",
+                            "333",
+                            "444",
+                            "555",
+                            "888"
+                        ],
+                        "cantidad": "5"
+                    },
+                    {
+                        "idCurso": "224",
+                        "id": [
+                            "111",
+                            "222",
+                            "777"
+                        ],
+                        "cantidad": "3"
+                    },
+                    {
+                        "idCurso": "225",
+                        "id": [
+                            "111",
+                            "222",
+                            "555",
+                            "666",
+                            "777",
+                            "888"
+                        ],
+                        "cantidad": "6"
+                    },
+                    {
+                        "idCurso": "226",
+                        "id": [
+                            "333",
+                            "444",
+                            "999",
+                            "100"
+                        ],
+                        "cantidad": "4"
+                    },
+                    {
+                        "idCurso": "227",
+                        "id": [
+                            "222",
+                            "777",
+                            "888"
+                        ],
+                        "cantidad": "3"
+                    },
+                    {
+                        "idCurso": "228",
+                        "id": [
+                            "111",
+                            "222",
+                            "333",
+                            "444",
+                            "555",
+                            "666",
+                            "777",
+                            "888",
+                            "999",
+                            "100"
+                        ],
+                        "cantidad": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "25f6f4996d0f33c06334c8d44a036f4c",
+            "key": "25f6f4996d0f33c06334c8d44a036f4c",
+            "value": {
+                "rev": "2-d956b33725549dfaab99dcd1d9c88295"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a036f4c",
+                "_rev": "2-d956b33725549dfaab99dcd1d9c88295",
+                "aprendiz": [
+                    {
+                        "id": "111",
+                        "nombre": "Diego",
+                        "carrera": "ing_informatica",
+                        "semestre": "3"
+                    },
+                    {
+                        "id": "222",
+                        "nombre": "Diana",
+                        "carrera": "ing_informatica",
+                        "semestre": "5"
+                    },
+                    {
+                        "id": "333",
+                        "nombre": "Daniel",
+                        "carrera": "diseño_grafico",
+                        "semestre": "2"
+                    },
+                    {
+                        "id": "444",
+                        "nombre": "David",
+                        "carrera": "diseño_grafico",
+                        "semestre": "2"
+                    },
+                    {
+                        "id": "555",
+                        "nombre": "Dana",
+                        "carrera": "ing_mecanica",
+                        "semestre": "4"
+                    },
+                    {
+                        "id": "666",
+                        "nombre": "Damian",
+                        "carrera": "ing_mecanica",
+                        "semestre": "4"
+                    },
+                    {
+                        "id": "777",
+                        "nombre": "Dante",
+                        "carrera": "ing_informatica",
+                        "semestre": "5"
+                    },
+                    {
+                        "id": "888",
+                        "nombre": "Juan",
+                        "carrera": "ing_mecatronica",
+                        "semestre": "6"
+                    },
+                    {
+                        "id": "999",
+                        "nombre": "Samuel",
+                        "carrera": "publicidad",
+                        "semestre": "4"
+                    },
+                    {
+                        "id": "100",
+                        "nombre": "Lucero",
+                        "carrera": "publicidad",
+                        "semestre": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "25f6f4996d0f33c06334c8d44a04c391",
+            "key": "25f6f4996d0f33c06334c8d44a04c391",
+            "value": {
+                "rev": "2-8e89a063a2bb238e9fe7d33b929bc522"
+            },
+            "doc": {
+                "_id": "25f6f4996d0f33c06334c8d44a04c391",
+                "_rev": "2-8e89a063a2bb238e9fe7d33b929bc522",
+                "aprendizTutor": [
+                    {
+                        "idTutor": "331",
+                        "id": "666",
+                        "calificacionTutor": "4.1"
+                    },
+                    {
+                        "idTutor": "331",
+                        "id": "111",
+                        "calificacionTutor": "4.5"
+                    },
+                    {
+                        "idTutor": "334",
+                        "id": "333",
+                        "calificacionTutor": "4.8"
+                    }
+                ]
+            }
+        }
+}
