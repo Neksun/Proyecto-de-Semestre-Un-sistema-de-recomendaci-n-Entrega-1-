@@ -33,7 +33,7 @@
                         "map": "function(doc) { if (doc.tipo === 'aprendiz' && doc.carrera === 'publicidad') { emit(doc.carrera, doc); } }"
                     },
                     "cantidad_aprendices_semestre": {
-                        "map": "function(doc) { if (doc.tipo === 'aprendiz' && doc.semestre === '4') { emit(doc.semestre, doc); } }"
+                        "map": "function(doc) { if (doc.tipo === 'aprendiz' && doc.semestre === 4) { emit(doc.semestre, doc); } }"
                     }
                 }
             }
