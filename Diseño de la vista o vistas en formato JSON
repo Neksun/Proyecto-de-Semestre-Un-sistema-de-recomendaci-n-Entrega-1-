@@ -8,9 +8,9 @@
                 "_id": "desing_Cursos",
                 "_rev": "5-3293fc4a2adae620cef090be61904785",
                 "views": {
-                    "cursos_nombre": {
-                        "map": "function(doc) { if (doc.tipo === 'curso') { emit(doc.nombre, doc); } }",
-                        "reduce": "_count"
+                   "cursos_nombre": {
+                      "map": "function(doc) { if (doc.tipo === 'curso') { emit(doc.nombre, doc); } }",
+                       "reduce": "_count"
                      },
                     "cursos_por_categoria": {
                         "map": "function(doc) { if (doc.tipo === 'curso') { emit(doc.categoria, 1); } }",
