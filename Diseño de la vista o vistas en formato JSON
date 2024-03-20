@@ -13,8 +13,8 @@
                        "reduce": "_count"
                      },
                     "cursos_por_categoria": {
-                        "map": "function(doc) { if (doc.tipo === 'curso') { emit(doc.categoria, 1); } }",
-                        "reduce": "_sum"
+                      "map": "function(doc) { if (doc.tipo === 'curso' && doc.categoria === 'artes') { emit(doc.categoria, doc); } }",
+                       "reduce": "_sum"
                     }
                 }
             }
@@ -30,12 +30,10 @@
                 "_rev": "2-475284ec64d9dd7cb8e441cfb51b1e0f",
                 "views": {
                     "aprendices_carrera": {
-                        "map": "function(doc) { if (doc.tipo === 'aprendiz') { emit(doc.carrera, 1); } }",
-                        "reduce": "_sum"
+                        "map": "function(doc) { if (doc.tipo === 'aprendiz' && doc.carrera === 'publicidad') { emit(doc.carrera, doc); } }"
                     },
                     "cantidad_aprendices_semestre": {
-                        "map": "function(doc) { if (doc.tipo === 'aprendiz') { emit(doc.semestre, 1); } }",
-                        "reduce": "_sum"
+                        "map": "function(doc) { if (doc.tipo === 'aprendiz' && doc.semestre === '4') { emit(doc.semestre, doc); } }"
                     }
                 }
             }
