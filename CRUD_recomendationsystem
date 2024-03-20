@@ -1,0 +1,129 @@
+import couchdb
+conn_String="http://admin:contraseña@localhost:5984"
+server=couchdb.Server(conn_String)
+db_name="recommendation_system"
+db=server[db_name]
+
+try:
+    db=server[db_name]
+    print("se ha conectado correctamente al servidor :D")
+except couchdb.http.ResourceNotFound:
+    print("La base de datos no existe. Intentando crearla...")
+    try:
+        db = server.create(db_name)
+        print("Base de datos creada exitosamente.")
+    except couchdb.http.PreconditionFailed:
+        print("No se pudo crear la base de datos. Verifica tus permisos.")
+
+ #-----------CRUD----------#
+try:
+    for doc_id in db:
+        print(db[doc_id])
+except couchdb.http.ResourceNotFound:
+    print("Documento no encontrado.")
+
+#----------------Consulta1----------------# :D
+#aprendiz segun nombre
+nombre_aprendiz = input("Ingrese el nombre del aprendiz que desea consultar: ")
+aprendiz_found = False
+
+try:
+    for doc_id in db:
+        doc = db[doc_id]
+
+        if "aprendiz" in doc and isinstance(doc["aprendiz"], list):
+            for elaprendiz in doc["aprendiz"]:
+                if isinstance(elaprendiz["nombre"], str) and elaprendiz["nombre"] == nombre_aprendiz :
+                    print("el aprendiz solicitado es:")
+                    print(elaprendiz)
+                    aprendiz_found = True 
+
+except couchdb.http.ResourceNotFound:
+    print("Documento no encontrado.")
+
+if not aprendiz_found:
+    print(f"No se encontro el aprendiz con el nombre: {nombre_aprendiz}.")
+
+#----------------Consulta2----------------# :D
+#cursos presencial o remoto
+modalidad_curso = input("Ingrese la modalidad del curso al que desea asistir (remoto o presencial): ")
+
+modalidad_found = False
+
+try:
+    for doc_id in db:
+        doc = db[doc_id]
+
+        if "cursos" in doc and isinstance(doc["cursos"], list):
+            for curso in doc["cursos"]:
+                if isinstance(curso["modalidad"], str) and curso["modalidad"] == modalidad_curso :
+                    print("Loos cursos con la modalidad seleccionada son:")
+                    print(curso)
+                    modalidad_found = True 
+
+except couchdb.http.ResourceNotFound:
+    print("Documento no encontrado.")
+
+if not modalidad_found:
+    print(f"No se encontraron cursos con la modalidad {modalidad_curso}.")
+
+#----------------Consulta3----------------# :D
+#tutor segun calificacion promedio
+calificacion_tutor = input("Ingrese la calificación del tutor que desea buscar: ")
+
+tutors_found = False
+
+try:
+    for doc_id in db:
+        doc = db[doc_id]
+
+        if "tutores" in doc and isinstance(doc["tutores"], list):
+            for tutor in doc["tutores"]:
+                if isinstance(tutor["calificacion_promedio"], str) and tutor["calificacion_promedio"] == calificacion_tutor:
+                    print("Los tutores con esa calificacion son:")
+                    print(tutor)
+                    tutors_found = True 
+
+except couchdb.http.ResourceNotFound:
+    print("Documento no encontrado.")
+
+if not tutors_found:
+    print(f"No se encontraron tutores con la calificación {calificacion_tutor}.")
+
+#-----------------crear nuevo aprendiz-------------#
+#new_aprendiz={
+   # "id":"888",
+    #"nombre":"Pipe",
+    #"carrera":"ing informatica",
+    #"semestre":"5"
+#}
+
+#doc_new_dev_id, doc_new_dev_rev= db.save(new_aprendiz)
+    
+
+#-----------Vistas-------------#
+def query(tipo,llave,valor):
+    desing_doc=f"_desing/{tipo}"
+    view_name=f"buscar_por_{llave}"
+    resultados = db.view(f"{tipo}/{view_name}", key=valor)
+
+#------------Vistas Curso---------#
+#consultar cursos gratuitos
+cursos_gratuitos = query("cursos", "gratuito", True)
+
+if cursos_gratuitos is None:
+  print("No se encontraron cursos gratuitos.")
+else:
+  print(f"Se encontraron {len(cursos_gratuitos)} cursos gratuitos:")
+  for curso in cursos_gratuitos:
+      print(f" - {curso}")  # Print individual course details
+
+# Consultar todos los cursos de categoría "artes"
+cursos_artes = query("cursos", None, "artes")
+
+if cursos_artes is None:
+  print("No se encontraron cursos de categoría 'artes'.")
+else:
+  print(f"Se encontraron {len(cursos_artes)} cursos de categoría 'artes':")
+  for curso in cursos_artes:
+      print(f" - {curso}")  # Print individual course details
