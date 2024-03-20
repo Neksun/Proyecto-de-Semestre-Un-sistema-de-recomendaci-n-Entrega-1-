@@ -75,11 +75,11 @@
             "id": "25f6f4996d0f33c06334c8d44a0071de",
             "key": "25f6f4996d0f33c06334c8d44a0071de",
             "value": {
-                "rev": "3-20a4426b2c470a745d4f0393444c7a58"
+                "rev": "4-a62d19349b31bca61f7bd7e8218dcdaa"
             },
             "doc": {
                 "_id": "25f6f4996d0f33c06334c8d44a0071de",
-                "_rev": "3-20a4426b2c470a745d4f0393444c7a58",
+                "_rev": "4-a62d19349b31bca61f7bd7e8218dcdaa",
                 "cursos": [
                     {
                         "idCurso": "221",
@@ -168,6 +168,17 @@
                         "duracion": "48h",
                         "certtificado": true,
                         "calificacion": "4.1"
+                    },
+                    {
+                        "idCurso": "123",
+                        "nombreCurso": "Pintura en acuarela",
+                        "categoria": "artes",
+                        "modalidad": "presencial",
+                        "gratuito": true,
+                        "precio": "0",
+                        "duracion": "16h",
+                        "certtificado": true,
+                        "calificacion": "4.4"
                     }
                 ]
             }
@@ -400,11 +411,11 @@
             "id": "25f6f4996d0f33c06334c8d44a04c391",
             "key": "25f6f4996d0f33c06334c8d44a04c391",
             "value": {
-                "rev": "2-8e89a063a2bb238e9fe7d33b929bc522"
+                "rev": "3-911f84d7e92c80c86418e72d13f9cccf"
             },
             "doc": {
                 "_id": "25f6f4996d0f33c06334c8d44a04c391",
-                "_rev": "2-8e89a063a2bb238e9fe7d33b929bc522",
+                "_rev": "3-911f84d7e92c80c86418e72d13f9cccf",
                 "aprendizTutor": [
                     {
                         "idTutor": "331",
