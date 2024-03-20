@@ -1,0 +1,64 @@
+ {
+            "id": "desing_Cursos",
+            "key": "desing_Cursos",
+            "value": {
+                "rev": "5-3293fc4a2adae620cef090be61904785"
+            },
+            "doc": {
+                "_id": "desing_Cursos",
+                "_rev": "5-3293fc4a2adae620cef090be61904785",
+                "views": {
+                    "cursos_gratuitos": {
+                        "map": "function(doc) { if (doc.tipo === 'curso' && doc.gratuito) { emit(doc.id); } }",
+                        "reduce": "_count"
+                    },
+                    "cursos_por_categoria": {
+                        "map": "function(doc) { if (doc.tipo === 'curso') { emit(doc.categoria, 1); } }",
+                        "reduce": "_sum"
+                    }
+                }
+            }
+        },
+        {
+            "id": "desing_aprendiz",
+            "key": "desing_aprendiz",
+            "value": {
+                "rev": "2-475284ec64d9dd7cb8e441cfb51b1e0f"
+            },
+            "doc": {
+                "_id": "desing_aprendiz",
+                "_rev": "2-475284ec64d9dd7cb8e441cfb51b1e0f",
+                "views": {
+                    "aprendices_carrera": {
+                        "map": "function(doc) { if (doc.tipo === 'aprendiz') { emit(doc.carrera, 1); } }",
+                        "reduce": "_sum"
+                    },
+                    "cantidad_aprendices_semestre": {
+                        "map": "function(doc) { if (doc.tipo === 'aprendiz') { emit(doc.semestre, 1); } }",
+                        "reduce": "_sum"
+                    }
+                }
+            }
+        },
+        {
+            "id": "desing_tutores",
+            "key": "desing_tutores",
+            "value": {
+                "rev": "3-149439d043d3a6dff9d7f025046a216c"
+            },
+            "doc": {
+                "_id": "desing_tutores",
+                "_rev": "3-149439d043d3a6dff9d7f025046a216c",
+                "views": {
+                    "tutores_datos_calificacion": {
+                        "map": "function(doc) { if (doc.tipo === 'tutor') { emit(doc.calificacion_promedio, doc); } }",
+                        "reduce": "_stats"
+                    },
+                    "tutores_fisica": {
+                        "map": "function(doc) { if (doc.tipo === 'tutor' && doc.carrera.includes('fisica')) { emit(doc); } }"
+                    }
+                }
+            }
+        }
+    ]
+}
